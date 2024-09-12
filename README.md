@@ -11,8 +11,9 @@ A [FontForge](https://github.com/skef/fontforge) Python script for automatically
 
 # Credits
 - Initial Code by CubeSolver25.
-- Python Support by NotestQ.
 - FontForge Python Support by [skef](https://github.com/skef), developer of Fontforge.
+- Python Support by NotestQ.
+
 
 # Motivation
 This script was originally created to aid in the development of a Scratch project which contained a text engine. Due to a lack of adequate glyph exporters at the time, I resorted to creating my own which runs with the assistance of FontForge, a font editing program.
