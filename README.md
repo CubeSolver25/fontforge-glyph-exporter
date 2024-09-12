@@ -12,7 +12,7 @@ See [epibirikka's](https://github.com/epibirikka) [sayketsu](https://github.com/
 7. Assuming no errors were displayed, you should now have a folder containing all of your desired glyphs alongisde a "kerning" file which contains the spacing data for every exported character. Use these to help create your own text engine if desired.
 
 # Tips
-The `Characters` txt files in this repository can be used to export specific glyphs. You can create your own txt files containing every character you wish to export. </ br>
+The `Characters` txt files in this repository can be used to export specific glyphs. You can create your own txt files containing every character you wish to export. <br />
 No special formatting is needed, just include one instance of each character. </br>
 *` 0123456789` will export all numbers and the space character (The spacing value of the font's whitespace will be included in the exported kerning file.)*
 
