@@ -21,6 +21,7 @@ No special formatting is needed, just include one instance of each character. <b
 - Initial Code by CubeSolver25.
 - FontForge Python [API](https://fontforge.org/docs/scripting/python.html) and Support by [skef](https://github.com/skef), developer of Fontforge.
 - Python Support by NotestQ.
+- Inspiration and "Kerning" Data Format from [Kuut's](https://kuut.xyz/) [Font Tool](https://kuut.xyz/fonttool). 
 
 
 # Motivation
