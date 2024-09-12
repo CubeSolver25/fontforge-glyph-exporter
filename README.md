@@ -1,5 +1,5 @@
 # FontForge Glyph Exporter
-A [FontForge](https://github.com/skef/fontforge) Python script for automatically exporting glyphs in SVG format.
+A [FontForge](https://github.com/skef/fontforge) Python script for automatically exporting font characters/glyphs in SVG format.
 
 # Instructions
 1. Open any font in FontForge.
