@@ -6,8 +6,7 @@ A [FontForge](https://github.com/skef/fontforge) Python script for automatically
 2. In FontForge, go to "File -> Execute Script"
 3. Open 'Glyph SVG Exporter.py' in any text editor, like Notepad or TextEdit. 
 4. Copy everything inside the Python file, and paste it into the FontForge Script Window.
-5. Select the bubble that says Python, and then run the script.
-6. Run the script, and follow the instructions that the program gives you.
+5. Select the bubble that says Python, and then run the script, following the prompts on-screen.
 7. Assuming no errors were displayed, you should now have a folder containing all of your desired glyphs alongisde a "kerning" file which contains the spacing data for every exported character. Use these to help create your own text engine if desired.
 
 # Credits
