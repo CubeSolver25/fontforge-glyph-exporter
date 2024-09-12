@@ -19,7 +19,8 @@ No special formatting is needed, just include one instance of each character. <b
 
 # Limitations
 - Does not export the font's actual kerning data, so font spacing data isn't completely accurate.
-- SVG Viewbox (ascent/descent) does not accommodate for accented characters, so they will often be cropped in the export. [(Advice by skef)](https://github.com/fontforge/fontforge/discussions/4997)
+- SVG Viewbox (ascent/descent) does not accommodate for accented characters, so they will often be cropped in the export. <br />
+[(Advice by skef)](https://github.com/fontforge/fontforge/discussions/4997)
 
 # Credits
 - Initial Code by CubeSolver25.
