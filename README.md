@@ -17,12 +17,15 @@ The `Characters` txt files in this repository can be used to export specific gly
 No special formatting is needed, just include one instance of each character. <br />
 *` 0123456789` will export all numbers and the space character (The spacing value of the font's whitespace will be included in the exported kerning file.)*
 
+# Limitations
+- Does not export the font's actual kerning data, so font spacing data isn't completely accurate.
+- SVG Viewbox (ascent/descent) does not accommodate for accented characters, so they will often be cropped in the export. [(Advice by skef)](https://github.com/fontforge/fontforge/discussions/4997)
+
 # Credits
 - Initial Code by CubeSolver25.
 - FontForge Python [API](https://fontforge.org/docs/scripting/python.html) and Support by [skef](https://github.com/skef), developer of FontForge.
 - Python Support by NotestQ.
 - Inspiration and "Kerning" Data Format from [Kuut's](https://kuut.xyz/) [Font Tool](https://kuut.xyz/fonttool). 
-
 
 # Motivation
 This script was originally created to aid in the development of a Scratch project which contained a text engine. Due to a lack of adequate glyph exporters at the time, I resorted to creating my own which runs on FontForge, a font editing program.
