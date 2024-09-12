@@ -10,9 +10,9 @@ A [FontForge](https://github.com/skef/fontforge) Python script for automatically
 7. Assuming no errors were displayed, you should now have a folder containing all of your desired glyphs alongisde a "kerning" file which contains the spacing data for every exported character. Use these to help create your own text engine if desired.
 
 # Credits
-Initial Code by CubeSolver25.
-Python Support by NotestQ.
-FontForge Python Support by [skef](https://github.com/skef), developer of Fontforge.
+- Initial Code by CubeSolver25.
+- Python Support by NotestQ.
+- FontForge Python Support by [skef](https://github.com/skef), developer of Fontforge.
 
 # Motivation
 This script was originally created to aid in the development of a Scratch project which contained a text engine. Due to a lack of adequate glyph exporters at the time, I resorted to creating my own which runs with the assistance of FontForge, a font editing program.
