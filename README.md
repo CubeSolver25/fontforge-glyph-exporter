@@ -19,7 +19,7 @@ No special formatting is needed, just include one instance of each character. <b
 
 # Credits
 - Initial Code by CubeSolver25.
-- FontForge Python Support by [skef](https://github.com/skef), developer of Fontforge.
+- FontForge Python [API](https://fontforge.org/docs/scripting/python.html) and Support by [skef](https://github.com/skef), developer of Fontforge.
 - Python Support by NotestQ.
 
 
