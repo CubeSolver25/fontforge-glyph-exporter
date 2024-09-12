@@ -30,5 +30,5 @@ This script was originally created to aid in the development of a Scratch projec
 # Tips for Scratchers
 If you're using the Sprite Folders addon from Scratch Addons, create a folder for each unique font for easier organization. If you cannot install the addon, you can set the prefix of the exported glyphs to '[FontName]//' instead.
 
-If you want to create more copies of the same font to allow different saturation levels, you are free to do so, but in most cases you only need the RED and BLACK versions of the glyphs. You can use brightness instead to simulate saturation to limited degrees.
+If you want to create more copies of the same font to allow different saturation levels, you are free to do so, but in most cases you only need the **red** and **black** versions of the glyphs. You can use brightness instead to simulate saturation to limited degrees.
 
