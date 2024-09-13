@@ -75,7 +75,7 @@ filedata = ''
 #ASCII 0-127 Characters (Whitespace included):
 # !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 #ASCII 0-255 Characters (Whitespace included):
-# !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞ
+# !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞ
 
 
 #with open(str(Path(destination) / "em.txt"), 'w') as emtxt:
@@ -140,6 +140,8 @@ except EnvironmentError:
 
 
 if not characterSourceType == 2:
+    characters_written = set() # by saiketsu, who did not realize there is a duplicate character in his set.
+
     for i, char in enumerate(characters):
         #if isinstance(char, int):
         #    char = chr(char)'
@@ -154,18 +156,26 @@ if not characterSourceType == 2:
             fontforge.logWarning(str(g.boundingBox()))    
             fontforge.logWarning(str(g.vwidth))  
             appendToKerningFile(kerningFile, char, g.width, (float(targetEm)/f.em))
+
             if char in specialchars:
                 characterName = specialcharnames[specialchars.index(char)]
                 print("Special Character Detected")
             elif char.isalpha():
                 if char.isupper():
                     allupperchars = allupperchars + char
-                    characterName = 'upper' + char
+                    characterName = "u" + char
+
+            if char in characters_written:
+                fontforge.logWarning(f"Duplicate character in your character set: {char}")
+                continue
+
             originalFilename = str(Path(destination) / (str(encoding) + '.svg'))
             targetFilename = str(Path(destination) / (prefix + characterName + suffix + '.svg'))
             g.export(originalFilename)
             modifySVG(originalFilename)
             os.rename(originalFilename, targetFilename)
+
+            characters_written.add(char)
 else:
     fontforge.logWarning('woo')
     for i in glyphs:
@@ -186,7 +196,7 @@ else:
             elif char.isalpha():
                 if char.isupper():
                     allupperchars = allupperchars + char
-                    characterName = 'upper' + char
+                    characterName = char
             originalFilename = str(Path(destination) / (str(encoding) + '.svg'))
             targetFilename = str(Path(destination) / (prefix + characterName + suffix + '.svg'))
             i.export(originalFilename)
