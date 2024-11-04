@@ -7,7 +7,7 @@ See the [sayketsu](https://github.com/CubeSolver25/fontforge-glyph-exporter/tree
 1. Open any font in FontForge.
 2. In FontForge, go to `File` then select `Execute Script`.
 3. Open [Glyph SVG Exporter.py](https://github.com/CubeSolver25/fontforge-glyph-exporter/blob/main/Glyph%20SVG%20Exporter.py) in any text editor, like Notepad or TextEdit. 
-4. Copy everything inside the Python fil, then paste it into the FontForge Script Window.
+4. Copy everything inside the Python file, then paste it into the FontForge Script Window.
 5. Select the bubble that says Python then run the script, following the prompts on-screen.
 7. Assuming no errors were displayed, you should now have a folder containing all of your desired glyphs alongisde a *"kerning" file which contains the spacing data for every exported character. Use these to help create your own text engine if desired. <br />
 \**Actual kerning data is not exported, so specific letter combinations like `AV` will leave larger gaps than the original font.*
